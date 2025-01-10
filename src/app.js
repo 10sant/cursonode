@@ -2,6 +2,8 @@ import express from "express"; //importar express
 
 const app = express(); //criar estância express
 
+app.set("view engine", "ejs");
+
 app.use(express.json()); //indicar para express ler body com json
 
 //mock
